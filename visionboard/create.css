@@ -1,0 +1,91 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    margin-bottom: 60px; 
+    padding: 0;
+    background-color: #b2d9f3;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #005c97;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #005c97;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+main {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+#visionForm {
+    margin-bottom: 20px;
+}
+
+#visionForm input[type="text"],
+#visionForm input[type="file"],
+#visionForm button {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#visionList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.vision {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.vision img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.vision p {
+    margin: 10px 0;
+}
+
+.back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #005c97;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #004171;
+}

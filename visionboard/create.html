@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Board Creator</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="create.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="material-icons">visibility</i> Vision Board Creator</h1>
+        </div>
+    </header>
+    <main class="container">
+        <div id="visionForm">
+            <input type="text" id="visionDescription" placeholder="Enter vision description">
+            <input type="file" id="imageUpload" accept="image/*">
+            <button onclick="addVision()">Add Vision</button>
+        </div>
+        <div id="visionList"></div>
+        <button onclick="backToHome()" class="back-button"><i class="material-icons">home</i> Back to Home</button>
+    </main>
+    <footer>
+        <p><i class="material-icons">copyright</i> 2024 Vision Board</p>
+        <p>
+    </footer>
+    <script src="create.js"></script>
+</body>
+</html>

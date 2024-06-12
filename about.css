@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #a89964;
+  }
+  
+  header {
+    text-align: center;
+    padding: 15px 0;
+  }
+  
+  h1 {
+    font-size: 35px;
+    color: #333;
+  }
+  
+  .gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .gallery img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    grid-column: span 2;
+  }
+  
+  table {
+    width: 100%;
+    margin-bottom: 40px;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  caption {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background-color: #a6814c;
+    color: #fff;
+  }
+  
+  th,
+  td {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #e0e0e0;
+    color: #333;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #ccc;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #a6814c;
+  }
+  
+  .description {
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+  }
+  
+  .about-me {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about {
+    text-align: center;
+  }
+  
+  .about .text {
+    padding: 20px;
+  }
+  
+  .about h2 {
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    line-height: 1.6;
+    color: #333;
+  }
+
+  .theme-toggle input[type="checkbox"] {
+    display: none;
+  }
+  
+  .theme-toggle label::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 30px;
+    height: 30px;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #764f20;
+    color: #fff;
+}
+
+footer button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #a6814c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-style: italic;
+}
+
+footer button:hover {
+    background-color: #7e572e;
+}

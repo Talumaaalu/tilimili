@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Vision Board Creator</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="create.html" id="create">Create</a></li>
+                    <li><a href="login.html" id="login">Login</a></li>
+                    <li><a href="sign.html" id="signup">Sign Up</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <div class="item fade-in">
+            <img src="https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/02/a0002487/img/basic/a0002487_main.jpg" alt="Travel to Japan">
+            <h2>Travel to Japan</h2>
+            <p>Explore the rich culture and breathtaking landscapes of Japan. Visit Tokyo, Kyoto, and experience traditional tea ceremonies and sushi-making classes.</p>
+        </div>
+        <div class="item fade-in">
+            <img src="https://i.ytimg.com/vi/llNuwhZWXKA/maxresdefault.jpg" alt="Learn Guitar">
+            <h2>Learn Guitar</h2>
+            <p>Embark on a musical journey by learning to play the guitar. Practice regularly, master chords, and eventually play your favorite songs.</p>
+        </div>
+        <div class="item fade-in">
+            <img src="https://res.cloudinary.com/comparis-cms/image/upload/v1686125303/health%20/overviewpages/fitness/fitness_xptixd.jpg" alt="Fitness Challenge">
+            <h2>Fitness Challenge</h2>
+            <p>Commit to a fitness routine and achieve your health goals. Incorporate cardio, strength training, and yoga into your daily schedule.</p>
+        </div>
+        <div class="item fade-in">
+            <img src="https://wordsrated.com/wp-content/uploads/2022/02/Number-of-Books-Published-Per-Year.jpg" alt="Read More Books">
+            <h2>Read More Books</h2>
+            <p>Expand your knowledge and imagination by reading a variety of books. Set a reading goal and explore different genres.</p>
+        </div>
+        <div class="item fade-in">
+            <img src="https://readwrite.com/wp-content/uploads/coding.jpg" alt="Learn Web Development">
+            <h2>Learn Web Development</h2>
+            <p>Acquire coding skills and build stunning websites and web applications. Master HTML, CSS, JavaScript, and explore advanced frameworks.</p>
+        </div>
+        <div class="item fade-in">
+            <img src="https://www.verywellmind.com/thmb/4ezMvupLUSSF9NzD5wqeJjtLekA=/2119x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-938890492-becc3fc4757849bea672f148454943f9.jpg" alt="Practice Meditation">
+            <h2>Practice Meditation</h2>
+            <p>Calm your mind, reduce stress, and improve focus through regular meditation practice. Incorporate mindfulness into your daily routine.</p>
+        </div>
+        <div class="item fade-in">
+            <img src="https://students.1fbusa.com/hubfs/25%20Ways%20to%20Volunteer%20in%20Your%20Community.jpg" alt="Volunteer Work">
+            <h2>Volunteer Work</h2>
+            <p>Give back to your community and make a positive impact through volunteer work. Support local charities and participate in meaningful projects.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Vision Board</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-firestore.js"></script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+    
+        const firebaseConfig = {
+            apiKey: "AIzaSyAk1QksOlHUGVfumZh08qmduAQLFNwO9YI",
+            authDomain: "visionboard-kiwiwiki.firebaseapp.com",
+            projectId: "visionboard-kiwiwiki",
+            storageBucket: "visionboard-kiwiwiki.appspot.com",
+            messagingSenderId: "124202970992",
+            appId: "1:124202970992:web:49a2fce7cd3d9a3314a9b5",
+            measurementId: "G-56FPSDSLS7"
+        };
+    
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+</html>

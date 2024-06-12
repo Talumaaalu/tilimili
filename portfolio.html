@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rai Aayuska (Skills Portfolio)</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MY PERSONAL WEBSITE</h1>
+        </header>
+        <div class="hero">
+            <div class="content">
+                <h2>My Skills Portfolio</h2>
+                <section class="skill">
+                    <div class="skill-box">
+                        <button class="icon-btn" onclick="toggleDescription('html')">
+                            <i class="fab fa-html5"></i>
+                        </button>
+                        <h3>HTML</h3>
+                        <p id="html-description" style="display: none;">HTML is the backbone of web development. With strong skills in HTML, I can create well-structured, semantic markup for web pages, ensuring accessibility and search engine optimization.</p>
+                        <a href="#" onclick="toggleDescription('html')">Click here</a>
+                    </div>
+                </section>
+                <section class="skill">
+                    <div class="skill-box">
+                        <button class="icon-btn" onclick="toggleDescription('css')">
+                            <i class="fab fa-css3-alt"></i>
+                        </button>
+                        <h3>CSS</h3>
+                        <p id="css-description" style="display: none;">CSS enables me to style web pages beautifully. With proficiency in CSS, I can design layouts, add animations, and ensure responsiveness, enhancing the visual appeal and user experience of websites.</p>
+                        <a href="#" onclick="toggleDescription('css')">Click here</a>
+                    </div>
+                </section>
+                <section class="skill">
+                    <div class="skill-box">
+                        <button class="icon-btn" onclick="toggleDescription('javascript')">
+                            <i class="fab fa-js"></i>
+                        </button>
+                        <h3>JavaScript</h3>
+                        <p id="javascript-description" style="display: none;">JavaScript empowers me to create interactive and dynamic web experiences. With solid knowledge of JavaScript, I can manipulate the DOM, handle events, and implement functionalities that enrich user interactions on websites.</p>
+                        <a href="#" onclick="toggleDescription('javascript')">Click here</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer>
+            <button onclick="window.location.href='index.html'">Go Back to Home</button>
+        </footer>
+    </div>
+
+    <script>
+        function toggleDescription(id) {
+            var description = document.getElementById(id + '-description');
+            if (description.style.display === "none" || description.style.display === "") {
+                description.style.display = "block";
+            } else {
+                description.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

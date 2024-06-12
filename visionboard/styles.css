@@ -1,0 +1,89 @@
+/* styles.css */
+
+/* Body styles */
+body {
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Background color for the body */
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Header, Main Content, Footer */
+    min-height: 100vh; /* Ensures body expands to at least the height of the viewport */
+}
+
+/* Header styles */
+header {
+    background-color: #005c97; /* Winter color palette: Blue */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center; /* Center-align header content */
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#branding h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li.current a {
+    font-weight: bold;
+}
+
+/* Main styles */
+.main-container {
+    display: flex; /* Display main content as flexbox */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-around; /* Center-align items horizontally */
+    padding: 20px;
+}
+
+.item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 0 1 calc(33% - 20px); /* Adjust flex basis to accommodate three items per row with spacing */
+    margin: 10px; /* Add some space between items */
+    display: flex; /* Display as flexbox */
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center-align items horizontally */
+}
+
+.item h2 {
+    margin-top: 0;
+}
+
+.item img {
+    max-width: 100%;
+    max-height: 200px; /* Set a maximum height for the images */
+    border-radius: 8px;
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #005c97; /* Winter color palette: Blue */
+    color: #fff;
+    font-family: "Times New Roman", Times, serif;
+}

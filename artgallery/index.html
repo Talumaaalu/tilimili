@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-paint-brush"></i> Virtual Gallery</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#gallery"><i class="fas fa-images"></i> Gallery</a></li>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <h2><i class="fas fa-paint-brush"></i> Welcome to the Virtual Gallery</h2>
+                <p>Explore the beauty of digital art from the comfort of your home.</p>
+            </div>
+        </section>
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <h2><i class="fas fa-images"></i> Gallery</h2>
+                <div class="controls">
+                    <input type="text" id="search" placeholder="Search by name or artist">
+                    <select id="filter">
+                        <option value="all">All</option>
+                        <option value="modern">Modern</option>
+                        <option value="classic">Classic</option>
+                        <option value="abstract">Abstract</option>
+                        <!-- Add more categories as needed -->
+                    </select>
+                </div>
+                <div class="gallery-grid">
+                   
+                </div>
+                <div class="upload-section">
+                    <h3><i class="fas fa-upload"></i> Upload Your Art</h3>
+                    <form id="upload-form">
+                        <input type="file" id="upload-image" required>
+                        <input type="text" id="upload-caption" placeholder="Caption" required>
+                        <input type="text" id="upload-artist" placeholder="Artist" required>
+                        <select id="upload-category">
+                            <option value="modern">Modern</option>
+                            <option value="classic">Classic</option>
+                            <option value="abstract">Abstract</option>
+                            
+                        </select>
+                        <button type="submit">Upload</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2><i class="fas fa-info-circle"></i> About the Virtual Gallery</h2>
+                <p>Welcome to the enchanting realm of the Virtual Gallery, where imagination transcends boundaries and reality intertwines with the sublime. Our mission is to curate a symphony of digital artistry, weaving together the threads of creativity from diverse corners of the globe.</p>
+                <p>Step into a world where pixels dance with purpose and colors sing in harmony, where each stroke of the digital brush tells a story, and every pixel whispers secrets of its creator's soul. Embark on a journey through our virtual corridors, where each masterpiece is a portal to infinite possibilities.</p>
+                <p>At the Virtual Gallery, we believe in the transformative power of art, in its ability to inspire, provoke, and elevate the human spirit. Join us as we celebrate the boundless creativity of digital artists and embark on a voyage through the ever-expanding universe of digital art.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Virtual Gallery. All rights reserved.</p>
+            <p>@aayuskaaraii****@gmail.com</p>
+        </div>
+    </footer>
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

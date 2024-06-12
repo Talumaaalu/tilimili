@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="quiz-box">
+        <div id="initial-screen" class="screen">
+            <h1>Welcome to the Quiz!!!!</h1>
+            <p>let"s see how sharp your mind is.....</p>
+            <p>Select a category and answer the questions to the best of your ability. Click the button below to start the quiz.</p>
+            <div id="category-container">
+                <button class="category-button" data-category="history">History</button>
+                <button class="category-button" data-category="cinema">Cinema</button>
+                <button class="category-button" data-category="geography">Geography</button>
+                <button class="category-button" data-category="technology">Technology</button>
+                <button class="category-button" data-category="Funfacts">Funfacts</button>
+            </div>
+        </div>
+
+        <div id="quiz-container" class="screen" style="display: none;">
+            <div id="question-container">
+                <h2 id="question-text"></h2>
+            </div>
+            <div id="options-container">
+            </div>
+            <button id="submit-button">Submit Your Answer</button>
+            <div id="feedback"></div>
+            <div id="score-container">Score: <span id="score">0</span></div>
+            <div id="timer-container">Time Left: <span id="timer">30</span>s</div>
+        </div>
+
+        <div id="summary-screen" class="screen" style="display: none;">
+            <h1>Quiz Result</h1>
+            <p>Your total score: <span id="final-score"></span></p>
+            <button id="restart-button">Restart Quiz</button>
+        </div>
+    </div>
+    <footer>
+     <p>Want to know more Wonders of the World??<button><a href="quiz.html">Click here</a></button></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
